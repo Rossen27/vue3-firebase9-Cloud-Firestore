@@ -1,11 +1,22 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-
+import AddCity from "../views/AddCity";
+import EditCity from "../views/EditCity";
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: "/add-city",
+    name: "addcity",
+    component: AddCity,
+  },
+  {
+    path: "/blogs/:blogId",
+    name: "editcity",
+    component: EditCity,
   },
   {
     path: '/about',
